@@ -1,0 +1,17 @@
+{
+  "name": "tsc-test",
+  "private": true,
+  "version": "1.0.0",
+  "dependencies": {
+    "prettier": "^2.2.1",
+    "typescript": "^4.1.5"
+  },
+  "scripts": {
+    "build": "yarn workspace host build && yarn workspace consumer build"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  }
+}
